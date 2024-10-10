@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jod's library</title>
+    <!-- css reset -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- css -->
+    <link rel="stylesheet" href="styles/global.css">
+    <!-- js -->
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>SOLUM<img src="assets/logo.svg" alt="logo">SPHERA</h1>
+    </header>
+
+    <main class="container">
+        <section class="nav">
+            <div class="greet">
+                <h2>Hi there,</h2>
+                <h2>Welcome to Solum Sphera, your very own digital library</h2>
+            </div>
+            <button class="add-btn"><span class="material-symbols-outlined">auto_stories</span>Add book</button>
+        </section>
+
+        <dialog class="add-window">
+            <form id="book-form">
+                <h1>Add new book to the shelf</h1>
+
+                <label for="title">Title</label>
+                <input type="text" class="title" name="title" required>
+
+                <label for="author">Author</label>
+                <input type="text" class="author" name="author" required>
+
+                <label for="pages">Pages</label>
+                <input type="number" class="pages" name="pages">
+
+                <label for="read">I have read this book</label>
+                <input type="checkbox" class="read" name="read">
+
+                <div class="dialog-nav">
+                    <button id="cancel-btn" type="button">Cancel</button>
+                    <button id="submit-btn" type="submit">Submit</button>
+                </div>
+            </form>
+        </dialog>
+
+        <section class="content"> 
+            <h1>Your current books</h1>
+            <div class="card-container">
+                <!-- books -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made with <span class="material-symbols-outlined">ramen_dining</span> 2024</p>
+    </footer>
+</body>
+</html>
